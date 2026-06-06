@@ -764,7 +764,7 @@ body::before {
 
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   margin-bottom: 48px;
 }
@@ -807,12 +807,23 @@ body::before {
   margin-bottom: 20px;
   position: relative;
   z-index: 1;
+  overflow: hidden;
 }
 
-.skill-icon-1 { background: rgba(0, 232, 122, 0.1); }
-.skill-icon-2 { background: rgba(34, 211, 238, 0.1); }
-.skill-icon-3 { background: rgba(212, 168, 71, 0.1); }
-.skill-icon-4 { background: linear-gradient(135deg, rgba(255, 36, 66, 0.12), rgba(0, 242, 234, 0.12)); }
+.brand-logo {
+  width: 48px;
+  height: 48px;
+  display: block;
+  filter: drop-shadow(0 10px 22px rgba(0, 0, 0, 0.28));
+}
+
+.douyin-logo,
+.x-logo,
+.geo-logo,
+.wechat-logo,
+.community-logo {
+  border-radius: 12px;
+}
 
 .skill-number {
   font-size: 11px;
