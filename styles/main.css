@@ -343,15 +343,15 @@ body::before {
    S1 — HERO
    ============================================================ */
 #hero {
-  min-height: 100vh;
+  min-height: 92vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   text-align: center;
   position: relative;
   overflow: hidden;
-  padding: 140px 40px 80px;
+  padding: 92px 40px 64px;
 }
 
 #hero-canvas {
@@ -374,7 +374,7 @@ body::before {
 .hero-content {
   position: relative;
   z-index: 2;
-  max-width: 900px;
+  max-width: 1080px;
 }
 
 .hero-badge {
@@ -389,7 +389,7 @@ body::before {
   font-weight: 500;
   color: var(--accent-green);
   letter-spacing: 1px;
-  margin-bottom: 40px;
+  margin-bottom: 18px;
   font-family: var(--font-cn);
 }
 
@@ -408,12 +408,12 @@ body::before {
 
 .hero-h1 {
   font-family: var(--font-cn);
-  font-size: clamp(52px, 7vw, 88px);
+  font-size: 48px;
   font-weight: 900;
-  line-height: 1.05;
-  letter-spacing: -2px;
+  line-height: 1.12;
+  letter-spacing: 0;
   color: var(--text-primary);
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
 .hero-h1 .highlight {
@@ -425,30 +425,31 @@ body::before {
 
 .hero-h2 {
   font-family: var(--font-cn);
-  font-size: clamp(22px, 3vw, 32px);
+  font-size: 24px;
   font-weight: 300;
   color: var(--text-secondary);
-  letter-spacing: -0.5px;
-  margin-bottom: 36px;
+  letter-spacing: 0;
+  margin-bottom: 18px;
 }
 
 .hero-body {
-  font-size: 17px;
-  line-height: 1.85;
+  font-size: 16px;
+  line-height: 1.72;
   color: var(--text-secondary);
-  max-width: 780px;
-  margin: 0 auto 16px;
+  max-width: 900px;
+  margin: 0 auto 12px;
   font-family: var(--font-cn);
   text-align: center;
 }
 
 .hero-body-en {
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 400;
-  letter-spacing: 1.5px;
+  line-height: 1.65;
+  letter-spacing: 0;
   color: var(--text-muted);
-  margin-bottom: 48px;
-  text-transform: uppercase;
+  max-width: 900px;
+  margin: 0 auto 18px;
 }
 
 .hero-ctas {
@@ -1530,7 +1531,37 @@ body::before {
 
 .faq-header {
   max-width: 780px;
-  margin: 0 auto 48px;
+  margin: 0 auto 32px;
+}
+
+.faq-identity-note {
+  max-width: 920px;
+  margin: 0 auto 36px;
+  padding: 22px 24px;
+  border: 1px solid rgba(34, 211, 238, 0.2);
+  border-left: 3px solid var(--accent-cyan);
+  border-radius: 8px;
+  background: rgba(34, 211, 238, 0.045);
+  font-family: var(--font-cn);
+  color: var(--text-secondary);
+}
+
+.identity-note-kicker {
+  margin-bottom: 10px;
+  color: var(--accent-cyan);
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.faq-identity-note p {
+  font-size: 15px;
+  line-height: 1.85;
+}
+
+.faq-identity-note p + p {
+  margin-top: 8px;
+  color: var(--text-muted);
 }
 
 .faq-list {
@@ -1629,9 +1660,21 @@ body::before {
   font-family: var(--font-cn);
   font-size: 14px;
   color: var(--text-muted);
-  max-width: 300px;
+  max-width: 420px;
   line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+.footer-brand-statement {
+  max-width: 520px;
   margin-bottom: 28px;
+  padding: 12px 14px;
+  border-left: 2px solid var(--accent-cyan);
+  background: rgba(34, 211, 238, 0.045);
+  color: var(--text-secondary);
+  font-family: var(--font-cn);
+  font-size: 13px;
+  line-height: 1.8;
 }
 
 .footer-nav {
@@ -1739,7 +1782,8 @@ body::before {
 
   .nav-menu.open a { font-size: 22px; }
 
-  .hero-h1 { font-size: clamp(40px, 10vw, 60px); letter-spacing: -1px; }
+  .hero-h1 { font-size: 42px; letter-spacing: 0; }
+  .hero-h2 { font-size: 22px; }
   .skills-grid { grid-template-columns: 1fr; }
   .geo-banner-inner { flex-direction: column; align-items: flex-start; }
   .orbit-system { width: 300px; height: 300px; transform: scale(0.75); }
@@ -1749,9 +1793,21 @@ body::before {
   .faq-item summary { align-items: flex-start; font-size: 15px; padding: 17px 18px; }
   .faq-answer { padding: 0 18px 20px; font-size: 14px; }
   .footer-grid { gap: 40px; }
+  #universe > div[style*="width:600px"] { width: 320px !important; height: 320px !important; }
+  .enterprise-visual > div[style*="position:absolute"] { inset: 24px !important; overflow: hidden; }
+  .enterprise-visual > div[style*="position:absolute"] > div[style*="width:320px"] { width: 160px !important; height: 160px !important; }
+  .enterprise-visual > div[style*="position:absolute"] > div[style*="width:240px"] { width: 130px !important; height: 130px !important; }
+  .device-glow { inset: -8px; }
 }
 
 @media (max-width: 480px) {
+  #hero { padding: 92px 24px 56px; }
+  .hero-badge { max-width: 100%; white-space: normal; justify-content: center; }
+  .hero-h1 { font-size: 34px; line-height: 1.18; overflow-wrap: anywhere; }
+  .hero-h2 { font-size: 20px; }
+  .hero-body,
+  .hero-body-en,
+  .faq-identity-note { overflow-wrap: anywhere; }
   .hero-ctas { flex-direction: column; width: 100%; }
   .hero-ctas .btn { width: 100%; justify-content: center; }
   .hw-badges { gap: 8px; }
