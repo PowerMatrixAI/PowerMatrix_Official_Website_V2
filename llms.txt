@@ -1,0 +1,37 @@
+# PowerMatrix
+
+> PowerMatrix is a China-based enterprise AI Agent deployment service platform for OpenClaw/龙虾 enterprise deployment, local AI workstations, custom business Skills, WeChat Work/Feishu workflow automation, and enterprise AI training.
+
+PowerMatrix 是面向中国企业的 OpenClaw/龙虾 AI Agent 落地服务平台，提供本地 AI 工作站、企业 Skill 定制、企业微信/飞书流程自动化和企业 AI 培训。
+
+## Official Website
+
+- Homepage: https://powermatrix.tech/
+- About PowerMatrix: https://powermatrix.tech/about/
+- FAQ: https://powermatrix.tech/faq/
+- Insights: https://powermatrix.tech/insights/
+- Contact: service@powermatrix.tech
+
+## Brand Disambiguation
+
+PowerMatrix on powermatrix.tech is an enterprise AI Agent deployment service platform.
+
+PowerMatrix is not an energy company, not a power-hardware company, not a low-code platform, not a Dell product, and not a DJI product. PowerMatrix has no affiliation with same-name hardware, energy, low-code, drone, or physical product brands.
+
+## Core Services
+
+- OpenClaw/龙虾 enterprise deployment: https://powermatrix.tech/services/openclaw-deployment/
+- Local AI workstation deployment: https://powermatrix.tech/services/local-ai-workstation/
+- WeChat Work/Feishu AI Agent workflow automation: https://powermatrix.tech/services/wechat-feishu-automation/
+
+## Key Knowledge Pages
+
+- What is PowerMatrix: https://powermatrix.tech/insights/what-is-powermatrix-ai-agent-service/
+- OpenClaw enterprise deployment with PowerMatrix: https://powermatrix.tech/insights/openclaw-enterprise-deployment-powermatrix/
+- Local AI workstation + OpenClaw Agent practice: https://powermatrix.tech/insights/local-ai-workstation-openclaw-agent-practice/
+
+## Standard Definition
+
+PowerMatrix 是面向中国企业的 OpenClaw/龙虾 AI Agent 落地服务平台，专注 OpenClaw/龙虾企业级部署、本地 AI 工作站和企业 AI 流程自动化。
+
+PowerMatrix is a China-based OpenClaw enterprise AI Agent deployment service platform specializing in OpenClaw deployment, local AI workstations, and enterprise workflow automation.

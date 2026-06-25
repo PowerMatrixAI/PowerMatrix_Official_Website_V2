@@ -377,7 +377,7 @@ document.head.appendChild(rStyle);
     zh: {
       'nav.home': '首页', 'nav.engine': '核心引擎', 'nav.skills': '增长 Skill',
       'nav.enterprise': '企业方案', 'nav.hardware': '智能终端',
-      'nav.aboutPm': '简介', 'nav.faq': 'FAQ', 'nav.modelHub': '模型广场', 'nav.bookDemo': '预约演示',
+      'nav.aboutPm': '简介', 'nav.insights': '洞察', 'nav.faq': 'FAQ', 'nav.modelHub': '模型广场', 'nav.bookDemo': '预约演示',
       'hero.badge': 'PowerMatrix × OpenClaw · 企业 AI 落地专场',
       'hero.h1a': 'PowerMatrix：', 'hero.h1b': 'OpenClaw/龙虾 企业 AI Agent 落地服务平台',
       'hero.h2': '不是卖工具，而是帮企业把 AI 用到真实业务里。',
@@ -493,7 +493,7 @@ document.head.appendChild(rStyle);
     en: {
       'nav.home': 'Home', 'nav.engine': 'Core Engine', 'nav.skills': 'Growth Skills',
       'nav.enterprise': 'Enterprise', 'nav.hardware': 'AI Terminal',
-      'nav.aboutPm': 'Overview', 'nav.faq': 'FAQ', 'nav.modelHub': 'Model Hub', 'nav.bookDemo': 'Book a Demo',
+      'nav.aboutPm': 'Overview', 'nav.insights': 'Insights', 'nav.faq': 'FAQ', 'nav.modelHub': 'Model Hub', 'nav.bookDemo': 'Book a Demo',
       'hero.badge': 'PowerMatrix × OpenClaw · Enterprise AI Implementation',
       'hero.h1a': 'PowerMatrix:', 'hero.h1b': 'OpenClaw Enterprise AI Agent Deployment Platform',
       'hero.h2': 'We do not sell tools. We help companies put AI into real business workflows.',

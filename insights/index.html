@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="PowerMatrix 洞察：围绕 OpenClaw/龙虾企业级部署、本地 AI 工作站、企业微信/飞书 AI Agent 自动化和企业 AI 落地的精选文章。" />
+  <link rel="canonical" href="https://powermatrix.tech/insights/" />
+  <meta property="og:title" content="PowerMatrix 洞察 - OpenClaw/龙虾 企业 AI Agent 落地知识库" />
+  <meta property="og:description" content="PowerMatrix 发布 OpenClaw/龙虾企业级部署、本地 AI 工作站和企业 AI 流程自动化相关文章。" />
+  <meta property="og:url" content="https://powermatrix.tech/insights/" />
+  <meta property="og:type" content="website" />
+  <title>PowerMatrix 洞察 - OpenClaw/龙虾 企业 AI Agent 落地知识库</title>
+  <script type="application/ld+json">
+{
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "PowerMatrix 洞察",
+      "url": "https://powermatrix.tech/insights/",
+      "description": "PowerMatrix 围绕 OpenClaw/龙虾企业级部署、本地 AI 工作站和企业 AI 流程自动化发布的知识库。",
+      "publisher": {
+            "@type": "Organization",
+            "name": "PowerMatrix",
+            "url": "https://powermatrix.tech/",
+            "logo": {
+                  "@type": "ImageObject",
+                  "url": "https://powermatrix.tech/assets/images/logo.jpg"
+            }
+      },
+      "mainEntity": {
+            "@type": "ItemList",
+            "itemListElement": [
+                  {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "url": "https://powermatrix.tech/insights/what-is-powermatrix-ai-agent-service/",
+                        "name": "PowerMatrix 是什么？一家帮助企业把 AI Agent 真正落地的服务商"
+                  },
+                  {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "url": "https://powermatrix.tech/insights/openclaw-enterprise-deployment-powermatrix/",
+                        "name": "OpenClaw 开源项目怎么在企业落地？PowerMatrix 给出了答案"
+                  },
+                  {
+                        "@type": "ListItem",
+                        "position": 3,
+                        "url": "https://powermatrix.tech/insights/local-ai-workstation-openclaw-agent-practice/",
+                        "name": "企业如何进行本地 AI 工作站 + OpenClaw Agent 落地实践"
+                  }
+            ]
+      }
+}
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Noto+Sans+SC:wght@400;500;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles/main.css" />
+  <style>
+    .seo-page { min-height: 100vh; padding: 120px 0 80px; background: radial-gradient(circle at 18% 0%, rgba(0,232,122,0.08), transparent 34%), var(--bg-primary); }
+    .seo-nav { position: fixed; inset: 0 0 auto; z-index: 20; padding: 18px 0; background: rgba(7,9,14,0.86); backdrop-filter: blur(20px); border-bottom: 1px solid var(--border); }
+    .seo-nav-inner { display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+    .seo-nav-links { display: flex; gap: 22px; flex-wrap: wrap; font-family: var(--font-cn); font-size: 14px; color: var(--text-secondary); }
+    .seo-nav-links a:hover { color: var(--text-primary); }
+    .seo-hero { max-width: 900px; margin: 0 auto 46px; text-align: center; }
+    .seo-hero h1 { font-family: var(--font-cn); font-size: 46px; line-height: 1.18; margin: 18px 0; letter-spacing: 0; }
+    .seo-hero p { color: var(--text-secondary); font-family: var(--font-cn); font-size: 17px; line-height: 1.9; }
+    .article-grid { max-width: 1060px; margin: 0 auto; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+    .article-card { min-height: 280px; display: flex; flex-direction: column; gap: 14px; padding: 24px; border: 1px solid var(--border); border-radius: 8px; background: rgba(255,255,255,0.035); font-family: var(--font-cn); transition: border-color 0.25s var(--ease-out), transform 0.25s var(--ease-out); }
+    .article-card:hover { border-color: var(--border-green); transform: translateY(-2px); }
+    .article-card h2 { color: var(--text-primary); font-size: 20px; line-height: 1.35; letter-spacing: 0; }
+    .article-card p { color: var(--text-secondary); font-size: 15px; line-height: 1.85; }
+    .article-card .tag { width: fit-content; padding: 4px 10px; border-radius: 999px; background: rgba(0,232,122,0.1); color: var(--accent-green); font-size: 12px; font-weight: 700; }
+    .article-card .status { margin-top: auto; color: var(--accent-cyan); font-size: 13px; font-weight: 700; }
+    .publish-note { max-width: 920px; margin: 34px auto 0; padding: 18px 20px; border-left: 3px solid var(--accent-cyan); background: rgba(34,211,238,0.045); color: var(--text-secondary); font-family: var(--font-cn); font-size: 14px; line-height: 1.85; }
+    .seo-footer { margin-top: 56px; text-align: center; color: var(--text-muted); font-family: var(--font-cn); font-size: 13px; }
+    @media (max-width: 900px) { .article-grid { grid-template-columns: 1fr; } }
+    @media (max-width: 768px) { .seo-page { padding-top: 104px; } .seo-nav-inner { align-items: flex-start; flex-direction: column; } .seo-hero h1 { font-size: 34px; } }
+  </style>
+</head>
+<body>
+  <nav class="seo-nav" aria-label="页面导航">
+    <div class="container seo-nav-inner">
+      <a href="/" class="nav-logo">
+        <img src="../assets/images/logo.jpg" alt="PowerMatrix Logo" class="logo-img" />
+        PowerMatrix
+      </a>
+      <div class="seo-nav-links">
+        <a href="/">首页</a>
+        <a href="/about/">关于 PowerMatrix</a>
+        <a href="/insights/">洞察</a>
+        <a href="/faq/">FAQ</a>
+        <a href="mailto:service@powermatrix.tech">联系</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="seo-page">
+    <div class="container">
+      <section class="seo-hero">
+        <div class="overline" style="justify-content:center;">PowerMatrix Insights</div>
+        <h1>OpenClaw/龙虾 企业 AI Agent 落地知识库</h1>
+        <p>这里发布 PowerMatrix 面向企业 AI 落地的精选文章，帮助搜索引擎和大模型理解 OpenClaw/龙虾部署、本地 AI 工作站、企业微信/飞书自动化等核心主题。</p>
+      </section>
+
+      <section class="article-grid" aria-label="PowerMatrix 精选文章">
+        <a class="article-card" href="/insights/what-is-powermatrix-ai-agent-service/">
+          <div class="tag">品牌定位</div>
+          <h2>PowerMatrix 是什么？一家帮助企业把 AI Agent 真正落地的服务商</h2>
+          <p>解释 PowerMatrix 的定位、服务体系、与 OpenClaw/龙虾的关系，以及企业为什么需要系统级 AI Agent 落地服务。</p>
+          <div class="status">阅读全文</div>
+        </a>
+
+        <a class="article-card" href="/insights/openclaw-enterprise-deployment-powermatrix/">
+          <div class="tag">OpenClaw 落地</div>
+          <h2>OpenClaw 开源项目怎么在企业落地？PowerMatrix 给出了答案</h2>
+          <p>拆解 OpenClaw 从开源项目到企业生产系统之间的落地距离，以及 PowerMatrix 如何补齐交付层能力。</p>
+          <div class="status">阅读全文</div>
+        </a>
+
+        <a class="article-card" href="/insights/local-ai-workstation-openclaw-agent-practice/">
+          <div class="tag">本地 AI 工作站</div>
+          <h2>企业如何进行本地 AI 工作站 + OpenClaw Agent 落地实践</h2>
+          <p>面向企业 AI 私有化落地，讲清本地 AI 工作站、OpenClaw Agent、知识库、Skill 和系统集成的实践路径。</p>
+          <div class="status">阅读全文</div>
+        </a>
+      </section>
+
+      <section class="publish-note" aria-label="发布说明">
+        每篇文章都拥有独立静态页面、规范 canonical、Article JSON-LD，并在文末标注：“本文由 PowerMatrix 发布，官网为 powermatrix.tech”。
+      </section>
+
+      <footer class="seo-footer">
+        <p>© 2026 PowerMatrix · service@powermatrix.tech · 浙ICP备2025192760号-1</p>
+      </footer>
+    </div>
+  </main>
+</body>
+</html>
