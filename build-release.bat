@@ -34,30 +34,15 @@ mkdir "%TARGET_DIR%" || (
   exit /b 1
 )
 
-for %%d in (assets scripts styles) do (
-  if not exist "%PROJECT_ROOT%\%%d" (
-    echo Missing required folder: %PROJECT_ROOT%\%%d
-    pause
-    exit /b 1
-  )
-
-  robocopy "%PROJECT_ROOT%\%%d" "%TARGET_DIR%\%%d" /E /NFL /NDL /NJH /NJS /NP >nul
-  if errorlevel 8 (
-    echo Failed to copy folder: %%d
-    pause
-    exit /b 1
-  )
-)
-
-if not exist "%PROJECT_ROOT%\index.html" (
-  echo Missing required file: %PROJECT_ROOT%\index.html
+robocopy "%PROJECT_ROOT%" "%TARGET_DIR%" /E /XD ".git" ".idea" "release" /XF "build-release.bat" ".gitignore" ".DS_Store" "Thumbs.db" "*.log" /NFL /NDL /NJH /NJS /NP >nul
+if errorlevel 8 (
+  echo Failed to copy project files.
   pause
   exit /b 1
 )
 
-copy /B /Y "%PROJECT_ROOT%\index.html" "%TARGET_DIR%\index.html" >nul
-if errorlevel 1 (
-  echo Failed to copy index.html.
+if not exist "%TARGET_DIR%\index.html" (
+  echo Missing copied file: %TARGET_DIR%\index.html
   pause
   exit /b 1
 )
